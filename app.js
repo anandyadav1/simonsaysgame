@@ -102,8 +102,6 @@
 // }
 
 
-
-// JavaScript to format the date as DD/MM/YYYY
 const currentDate = new Date();
 const day = String(currentDate.getDate()).padStart(2, '0'); // Add leading zero
 const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
@@ -121,11 +119,20 @@ let level = 0;
 
 let h2 = document.querySelector("h2");
 
+// Start the game on keypress (for desktop)
 document.addEventListener("keypress", function () {
     if (started == false) {
         console.log("Game is start");
         started = true;
+        levelUp();
+    }
+});
 
+// Add start button event listener (for mobile)
+document.getElementById("start-btn").addEventListener("click", function () {
+    if (!started) {
+        console.log("Game is start");
+        started = true;
         levelUp();
     }
 });

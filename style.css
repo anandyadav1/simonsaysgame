@@ -1,8 +1,11 @@
+
 body {
     text-align: center;
+    position: relative;
 }
-h1{
-    color:darkgreen;
+
+h1 {
+    color: darkgreen;
 }
 
 .btn {
@@ -40,75 +43,25 @@ h1{
 
 .userflash {
     background-color: green;
-} 
-
-
-
-
-/* General styles */
-/* body {
-    text-align: center;
-    font-family: Arial, sans-serif;
 }
 
-h1 {
-    font-size: 2em;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin-top: 20px;
-}
-
-.btn-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.line-one, .line-two {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-
-.btn {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    border-radius: 50%;
-    opacity: 0.7;
+.start-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
-    transition: opacity 0.3s;
 }
 
-.red {
-    background-color: red;
+.start-btn:hover {
+    background-color: #45a049;
 }
 
-.yellow {
-    background-color: yellow;
-}
-
-.green {
-    background-color: green;
-}
-
-.purple {
-    background-color: purple;
-}
-
-.flash {
-    opacity: 1 !important;
-}
-
-.userflash {
-    opacity: 0.5;
-} */
-
-/* Responsive layout for mobile devices */
 @media (max-width: 600px) {
     .btn-container {
         flex-direction: column;
@@ -129,6 +82,12 @@ h2 {
 
     h2 {
         font-size: 1.2em;
+    }
+
+    .start-btn {
+        top: 10px;
+        right: 10px;
+        font-size: 1rem;
     }
 }
 
